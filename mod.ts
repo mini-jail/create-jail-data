@@ -1,5 +1,5 @@
 import { createData } from "./src/jail-creator.ts"
-import {
+import type {
   Asset,
   ColorPalette,
   Data,
