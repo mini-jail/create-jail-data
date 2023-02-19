@@ -1,4 +1,4 @@
-import { createData } from "./jail_creator.ts"
+import { createData } from "./src/jail_creator.ts"
 import {
   Asset,
   ColorPalette,
@@ -8,8 +8,7 @@ import {
   OraStack,
   Preview,
   Source,
-} from "./types.d.ts"
-
+} from "./src/types.d.ts"
 export {
   createData,
   Asset,
