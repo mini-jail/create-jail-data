@@ -16,12 +16,12 @@ import {
 } from "./helpers.ts"
 
 export async function createData(
-  fiePath: string,
+  filePath: string,
   colorDbPath: string,
   ...colors: string[]
 ): Promise<Data> {
   const colorDb = await getColorDb(colorDbPath)
-  const zipFile = await readZip(fiePath)
+  const zipFile = await readZip(filePath)
   const oraXml = await zipFile.file("stack.xml").async("string")
   const image: OraImage = structuredClone(xmlParse(oraXml)).image
   const sources: Source[] = []
