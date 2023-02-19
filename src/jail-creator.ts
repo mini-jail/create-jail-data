@@ -1,5 +1,5 @@
 import { readZip, xmlParse } from "./deps.ts"
-import { Asset, ColorPalette, Data, OraImage, Source } from "./types.d.ts"
+import type { Asset, ColorPalette, Data, OraImage, Source } from "./types.d.ts"
 import { fromHex } from "./color.ts"
 import {
   getColorDb,
